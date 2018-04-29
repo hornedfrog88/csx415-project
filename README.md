@@ -1,5 +1,4 @@
-# project
+# CSX415 Project - Total Course Enrollment Prediction Model
+---
 
-This repository contains assets for the CSX415 final calss project-Modeling Student Success Factors at UC Berkeley
-
-
+This is the repository for the CSX415 final class project
