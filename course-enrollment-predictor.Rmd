@@ -1,5 +1,5 @@
 ---
-title: "Total Course Enrollment Predictor"
+title: "UC Berkeley-Total Course Enrollment Predictor"
 author: "Rich McGowan"
 date: "April 29, 2018"
 output: 
@@ -7,7 +7,7 @@ output:
   toc: FALSE
 theme: united
 ---
-#### The purpose of this project is to develop a predictive model for Total Course Enrollments by Term
+#### The purpose of this project is to develop a predictive model for UC Berkeley Total Course Enrollments by Term
 ```{r load project, include=FALSE}
 library('ProjectTemplate')
 load.project()
