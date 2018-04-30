@@ -1,0 +1,63 @@
+---
+title: "Formal Problem Statement-Predicting Course Enrollment"
+author: "Rich McGowan"
+date: "Revision Date: April 22, 2018"
+output: 
+        html_document:
+                  toc: TRUE
+                  toc_depth: 4 
+                  theme: united
+---
+```{r setup, include=FALSE}
+library(knitr)
+library(yaml)
+opts_chunk$set(echo = FALSE)
+```
+
+### **Introduction**
+Departmental class schedulers at UC Berkeley need to be able to accurately predict total enrollment for a given course.  Being able to estimate the total enrollments for a given course will aid in knowing how many class sections to schedule in forthcoming terms.  For this purpose we will be focusing on the primary enrollment sections, not the related course sections.
+
+### **Stakeholders**
+
+#### Departmental and College Schedulers
+Departmental and College schedulers (Enrollment Managers) are the primary university staff members who are tasked with creating an appropriate number of class sections for each course each term.  Therefore a model that returns dependable predicted enrollment totals (per course) would benefit the schedulers by decreasing their workload.  Departmental and College schedulers would be the primary users of the model.  
+
+#### Departmental and College Advisers
+Departmental and College Advisers have a stake in being able to counsel students on which courses are in high demand. 
+
+#### Office of the Registrar Staff
+The Office of the Registrar staff are heavily invested in supporting departments in their course scheduling.  One of the most important aspects of this support is related to classroom scheduling (class capacity). An accurate predictor of course enrollment would be a key driver of efficiency classroom utilization.  
+
+#### Faculty
+Faculty also have a stake in accurate predictions of course enrollment and would benefit by the knowledge of course demand for the upcoming term. 
+
+#### Students
+Finally, the UC Berkeley student population has a stake in there being enough available seats when they are registering.
+
+### **Subject Matter Experts (SMEs) & Owners**
+SMEs and functional business owners of the predictive model would consist of a collaborative partnership between:
+Student Records Business Analysts (from Student Information Systems-SIS department in IST) 
+Departmental and College schedulers.
+
+### **Technical Metrics for Success**
+If the model can be deployed to and easily accessed by the user community without extensive technical support, that would be the single greatest measure of success.  
+
+### **Functional Metrics for Success**
+If the predictive model can be deployed so that the end user community can: a. easily access and understand the model results. b. realize the benefits of these predictions by not having to scheduled extra sections, cancel sections or add seat capacity to exising sections.  All of the above will reduce the scheduling workload by a measurable amount.
+
+### **Risks** 
+
+#### Model Deployment
+Since the UC Berkeley Departmental and College scheduler user community has no experience with using predictive modeling tools, there is a risk that many will be unwilling to utilize the model. Therefore understanding the basics of the model and having confidence in its results is paramount to its success. Another risk to successful deployment of the model is assuring that the target user community (Departmental and College schedulers) have access to the necessary software (e.g. R and R Studio). There are university (IST) constraints on the installation of software on university systems.
+
+#### Risks of Model Inaccuracy
+If the model returns inaccurate predictions of course enrollment, the schedulers are in no worse of a situation than they are currently in.  Each term the entire class schedule is copied from like term to like term (e.g. from Fall 2017 to Fall 2018).  Therefore the class capacities are already pre-populated.  The model results would give schedulers an easier and hopefully a more accurate class capacity guideline to reference than having to look at the prior year's/term's class schedule and compare the resulting enrollment results.  
+
+### **General Disclaimer**
+Dependence upon predictive models can, in theory, lead to removing human judgment from decision making. This may result in decisions that typically require holistic review becoming 100% automated (or 100% dependent on automation).  Schedulers will need to be trained on how to draw a balance between making decisions based on data and on human judgment.  No matter what automation or analytics are available, human judgement plays a large role in how courses/class sections are scheduled.
+
+### **Timeline for Deployment**
+1. Collecting, Analyzing and Visualizing Data: **3 weeks**
+2. Building the Predictive Model (training, testing and feature selection): **2 weeks**
+3. Preliminary Results: **1 week**
+4. Validating the Results of the Model: **1 week**
