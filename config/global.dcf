@@ -8,7 +8,7 @@ munging: TRUE
 logging: FALSE
 logging_level: INFO
 load_libraries: TRUE
-libraries: reshape, plyr, dplyr, tidyr, ggplot2, stringr, lubridate, caret, magrittr
+libraries: reshape, plyr, dplyr, tidyr, ggplot2, stringr, lubridate, caret, magrittr, rpart, rpart.plot
 as_factors: TRUE
 data_tables: FALSE
 attach_internal_libraries: FALSE

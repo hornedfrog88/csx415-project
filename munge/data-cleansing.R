@@ -15,3 +15,5 @@ final_training_set <- training_data_minimized %>%
   filter(grepl('DATASCI', Course))
 final_testing_set <- test_data_minimized %>% 
   filter(grepl('DATASCI', Course))
+final_data_set <- bind_rows(final_training_set, final_testing_set)
+
