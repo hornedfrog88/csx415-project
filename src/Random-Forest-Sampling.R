@@ -1,3 +1,5 @@
+
+
 #Use the train function from the caret package to create samples and create a random forest model
 c1 <- makeCluster(detectCores())
 control <- trainControl(method = "boot",number = 10, allowParallel = TRUE)
