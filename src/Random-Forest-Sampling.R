@@ -12,3 +12,4 @@ RMSE_rf <- RMSE(final_testing_set$EnrlTotal,predict_rf)
 print(paste("The Mean Absolute Error of the Prediction is", round(MAE_rf, digits = 2)))
 print(paste("The Root Mean Squared Error of the Prediction is", round(RMSE_rf, digits = 2)))
 
+?data
