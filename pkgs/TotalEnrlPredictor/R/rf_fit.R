@@ -9,6 +9,7 @@
 #' @examples
 #' rf_fit(course_set)
 rf_fit <- function(course_set) {
-rf_fit <- randomForest::randomForest(EnrlTotal~.,data= ourse_set,mtry=3,ntree=10)
+rf_fit <- randomForest::randomForest(EnrlTotal~MaxUnits+TotalCapacity+TotalSections,
+                                                   data=course_set,mtry=3,ntree=10)
   return(rf_fit)
 }
