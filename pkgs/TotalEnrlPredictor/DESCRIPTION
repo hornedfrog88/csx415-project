@@ -1,0 +1,12 @@
+Package: TotalEnrlPredictor
+Title: Total Enrollment Predictor
+Version: 0.0.0.1
+Authors@R: person("Richard", "McGowan", email = "rmcgowan@berkeley.edu", role = c("aut", "cre"))
+Description: This package contains a function (random forest model) useful for 
+    predicting total enrollments in UC Berkeley courses, for a particular Subject Area, 
+    for a target enrollment Term
+Depends: R (>= 3.4.1)
+License: GPL-2 GPL-3 LGPL-2 LGPL-2.1 LGPL-3 AGPL-3 Artistic-2.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
