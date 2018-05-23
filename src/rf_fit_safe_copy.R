@@ -13,3 +13,8 @@ rf_fit <- randomForest::randomForest(EnrlTotal~CourseID+MaxUnits+TotalCapacity+T
                                     data=course_set,mtry=3,ntree=50)
   return(rf_fit)
 }
+# Build Model Packages 
+pkg <- "pkgs/TotalEnrlPredictor"
+if( ! dir.exists(pkg) ) devtools::create(pkg)
+
+devtools::use_data(rf_fit, pkg = pkg, overwrite = TRUE )
