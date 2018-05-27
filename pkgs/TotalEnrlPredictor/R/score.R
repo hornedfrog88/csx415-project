@@ -1,4 +1,4 @@
-#' @title Score Function (Predict Total Course Enrollment W/ 4 Inputs)
+#' @title Score Function - Predict Total Course Enrollment W/ 4 Inputs)
 #' @param CourseID 6 digit integer which is the unique course identifier
 #' @param MaxUnits 2 digit maximum integer
 #' @param TotalCapacity 3 digit maximum integer
@@ -19,8 +19,8 @@ score <- function(courseID,maxunits,totalcapacity,totalsections)
                        TotalCapacity=totalcapacity,
                        TotalSections=totalsections)
 
-  rbind(data_prototype, input) %>%    # automagically convert factors
-  predict(rf_fit,input)
+  rbind(data_prototype, input) %>%
+  ceiling((predict(rf_fit,input))) %>%
   as.data.frame %>%
   jsonlite::toJSON( )
 }

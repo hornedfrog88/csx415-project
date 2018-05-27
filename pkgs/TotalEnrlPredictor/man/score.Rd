@@ -2,7 +2,7 @@
 % Please edit documentation in R/score.R
 \name{score}
 \alias{score}
-\title{Score Function (Predict Total Course Enrollment W/ 4 Inputs)}
+\title{Score Function - Predict Total Course Enrollment W/ 4 Inputs)}
 \usage{
 score(courseID, maxunits, totalcapacity, totalsections)
 }
