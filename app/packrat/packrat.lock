@@ -1,0 +1,16 @@
+PackratFormat: 1.4
+PackratVersion: 0.4.9.2
+RVersion: 3.5.0
+Repos: CRAN=https://cran.rstudio.com/
+
+Package: TotalEnrlPredictor
+Source: source
+Version: 0.0.0.1
+SourcePath:
+    c:/Users/Richard/Desktop/csx415-project/pkgs//TotalEnrlPredictor
+Hash: 230831184a25d9a8e94f9fa5c1f53894
+
+Package: packrat
+Source: CRAN
+Version: 0.4.9-2
+Hash: 47dbd4e04dcd01da02a2021203205cb1
