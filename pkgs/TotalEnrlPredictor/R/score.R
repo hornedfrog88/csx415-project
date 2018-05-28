@@ -13,16 +13,18 @@
 #' @import magrittr
 #' @export
 
+#Scoring Function
 score <- function(courseID,maxunits,totalcapacity,totalsections)
 {
    input <- data.frame(CourseID=courseID,MaxUnits=maxunits,
                        TotalCapacity=totalcapacity,
                        TotalSections=totalsections)
-
-  rbind(data_prototype, input) %>%
-  ceiling((predict(rf_fit,input))) %>%
-  as.data.frame %>%
-  jsonlite::toJSON( )
+# Create a data frame of the predicted value
+  TotalPredEnrl <- rbind(data_prototype,input) %>%
+  predict(rf_fit,.) %>%
+  as.data.frame
+# Round the predicted total enrolled value and pipe it to a JSON output
+  round(TotalPredEnrl) %>% jsonlite::toJSON( )
 }
 
 
