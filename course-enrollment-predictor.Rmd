@@ -1,16 +1,16 @@
 ---
-title: "UC Berkeley-Graduate Level Data Science Course Enrollment Predictor"
+title: "UC Berkeley- Course Enrollment Predictor"
 author: "Rich McGowan"
-date: "May 6, 2018"
+date: "May 28, 2018"
 output: 
   html_document:
   toc: FALSE
 theme: united
 ---
-#### The purpose of this project is to develop a predictive model for UC Berkeley Total Course Enrollments, by Subject Area for a targeted Term. In this project we will focus on using various models to predict Total Course Enrollment for Graduate Level Data Science Courses  
+#### The purpose of this project is to develop a predictive model for UC Berkeley Total Course Enrollments. In this project we will train various models to predict Total Course Enrollment for Graduate Level Data Science Courses  
 
-#### After the project has been created in the target csx415-project directory package is installed and loaded. The first step is to initialize csx415-project. The COURSE_CAPACITY_DATA.csv file contains the raw course enrollment data extracted from the Student Information System (SIS) has been moved into the "data" folder of the project template and will be loaded into the environment.  All the necessary packages/libraries will be loaded based on what is specified in the the Config file.
+#### After the project has been created in the target csx415-project directory package is installed and loaded. The first step is to initialize csx415-project. The COURSE_CAPACITY_DATA.csv file contains the raw course enrollment data extracted from UC Berkeley's Student Information System (SIS).  The data has been moved into the ./data folder of the project template and will be loaded into the environment.  All the necessary packages/libraries will be loaded based on what is specified in the the Config file.
 ```{r load project, include=FALSE}
-library('ProjectTemplate')
+library(ProjectTemplate)
 load.project()
 ```

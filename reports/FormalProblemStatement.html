@@ -120,7 +120,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Formal Problem Statement-Predicting Course Enrollment</h1>
 <h4 class="author"><em>Rich McGowan</em></h4>
-<h4 class="date"><em>Revision Date: April 22, 2018</em></h4>
+<h4 class="date"><em>Revision Date: May 28, 2018</em></h4>
 
 </div>
 
@@ -148,25 +148,25 @@ $(document).ready(function () {
 
 <div id="introduction" class="section level3">
 <h3><strong>Introduction</strong></h3>
-<p>Departmental class schedulers at UC Berkeley need to be able to accurately predict total enrollment for a given course. Being able to estimate the total enrollments for a given course will aid in knowing how many class sections to schedule in forthcoming terms. For this purpose we will be focusing on the primary enrollment sections, not the related course sections.</p>
+<p>UC Berkeley’s departmental class schedulers and enrollment managers need to be able to accurately predict total enrollment for a given course. Being able to estimate the total enrollments for a given course will aid in knowing how many class sections to schedule in forthcoming terms. For this purpose we will be focusing on the primary enrollment sections, not the related (secondary) course sections.</p>
 </div>
 <div id="stakeholders" class="section level3">
 <h3><strong>Stakeholders</strong></h3>
 <div id="departmental-and-college-schedulers" class="section level4">
 <h4>Departmental and College Schedulers</h4>
-<p>Departmental and College schedulers (Enrollment Managers) are the primary university staff members who are tasked with creating an appropriate number of class sections for each course each term. Therefore a model that returns dependable predicted enrollment totals (per course) would benefit the schedulers by decreasing their workload. Departmental and College schedulers would be the primary users of the model.</p>
+<p>Departmental and College Schedulers (Enrollment Managers) are the primary university staff members who are tasked with creating an appropriate number of class sections for each course each term. Therefore a model that returns dependable predicted enrollment totals (per course) would benefit the schedulers by decreasing their workload. Departmental and College schedulers would be the primary users of the model.</p>
 </div>
 <div id="departmental-and-college-advisers" class="section level4">
 <h4>Departmental and College Advisers</h4>
-<p>Departmental and College Advisers have a stake in being able to counsel students on which courses are in high demand.</p>
+<p>Departmental and College Advisers have a stake in being able to counsel students on which courses are in high demand and which courses might have limited class sections.</p>
 </div>
 <div id="office-of-the-registrar-staff" class="section level4">
 <h4>Office of the Registrar Staff</h4>
-<p>The Office of the Registrar staff are heavily invested in supporting departments in their course scheduling. One of the most important aspects of this support is related to classroom scheduling (class capacity). An accurate predictor of course enrollment would be a key driver of efficiency classroom utilization.</p>
+<p>The Office of the Registrar staff are heavily invested in supporting departments in their course scheduling. One of the most important aspects of this support is related to classroom scheduling (class capacity). An accurate predictor of course enrollment would be a key factor in efficient classroom utilization.</p>
 </div>
 <div id="faculty" class="section level4">
 <h4>Faculty</h4>
-<p>Faculty also have a stake in accurate predictions of course enrollment and would benefit by the knowledge of course demand for the upcoming term.</p>
+<p>Faculty also have a stake in accurate predictions of total course enrollment and would benefit by the knowledge of course demand for the upcoming term.</p>
 </div>
 <div id="students" class="section level4">
 <h4>Students</h4>
@@ -183,7 +183,7 @@ $(document).ready(function () {
 </div>
 <div id="functional-metrics-for-success" class="section level3">
 <h3><strong>Functional Metrics for Success</strong></h3>
-<p>If the predictive model can be deployed so that the end user community can: a. easily access and understand the model results. b. realize the benefits of these predictions by not having to scheduled extra sections, cancel sections or add seat capacity to exising sections. All of the above will reduce the scheduling workload by a measurable amount.</p>
+<p>If the predictive model can be deployed so that the end user community can: a. easily access and understand the model results. b. realize the benefits of these predictions by not having to scheduled extra “ghost” class sections, cancel sections or add seat capacity to exising sections. All of the above will reduce the scheduling workload by a measurable amount.</p>
 </div>
 <div id="risks" class="section level3">
 <h3><strong>Risks</strong></h3>

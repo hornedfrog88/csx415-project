@@ -1,7 +1,7 @@
 ---
 title: "Formal Problem Statement-Predicting Course Enrollment"
 author: "Rich McGowan"
-date: "Revision Date: April 22, 2018"
+date: "Revision Date: May 28, 2018"
 output: 
         html_document:
                   toc: TRUE
@@ -15,21 +15,21 @@ opts_chunk$set(echo = FALSE)
 ```
 
 ### **Introduction**
-Departmental class schedulers at UC Berkeley need to be able to accurately predict total enrollment for a given course.  Being able to estimate the total enrollments for a given course will aid in knowing how many class sections to schedule in forthcoming terms.  For this purpose we will be focusing on the primary enrollment sections, not the related course sections.
+UC Berkeley's departmental class schedulers and enrollment managers need to be able to accurately predict total enrollment for a given course.  Being able to estimate the total enrollments for a given course will aid in knowing how many class sections to schedule in forthcoming terms.  For this purpose we will be focusing on the primary enrollment sections, not the related (secondary) course sections.
 
 ### **Stakeholders**
 
 #### Departmental and College Schedulers
-Departmental and College schedulers (Enrollment Managers) are the primary university staff members who are tasked with creating an appropriate number of class sections for each course each term.  Therefore a model that returns dependable predicted enrollment totals (per course) would benefit the schedulers by decreasing their workload.  Departmental and College schedulers would be the primary users of the model.  
+Departmental and College Schedulers (Enrollment Managers) are the primary university staff members who are tasked with creating an appropriate number of class sections for each course each term.  Therefore a model that returns dependable predicted enrollment totals (per course) would benefit the schedulers by decreasing their workload.  Departmental and College schedulers would be the primary users of the model.  
 
 #### Departmental and College Advisers
-Departmental and College Advisers have a stake in being able to counsel students on which courses are in high demand. 
+Departmental and College Advisers have a stake in being able to counsel students on which courses are in high demand and which courses might have limited class sections. 
 
 #### Office of the Registrar Staff
-The Office of the Registrar staff are heavily invested in supporting departments in their course scheduling.  One of the most important aspects of this support is related to classroom scheduling (class capacity). An accurate predictor of course enrollment would be a key driver of efficiency classroom utilization.  
+The Office of the Registrar staff are heavily invested in supporting departments in their course scheduling.  One of the most important aspects of this support is related to classroom scheduling (class capacity). An accurate predictor of course enrollment would be a key factor in efficient classroom utilization.  
 
 #### Faculty
-Faculty also have a stake in accurate predictions of course enrollment and would benefit by the knowledge of course demand for the upcoming term. 
+Faculty also have a stake in accurate predictions of total course enrollment and would benefit by the knowledge of course demand for the upcoming term. 
 
 #### Students
 Finally, the UC Berkeley student population has a stake in there being enough available seats when they are registering.
@@ -43,7 +43,7 @@ Departmental and College schedulers.
 If the model can be deployed to and easily accessed by the user community without extensive technical support, that would be the single greatest measure of success.  
 
 ### **Functional Metrics for Success**
-If the predictive model can be deployed so that the end user community can: a. easily access and understand the model results. b. realize the benefits of these predictions by not having to scheduled extra sections, cancel sections or add seat capacity to exising sections.  All of the above will reduce the scheduling workload by a measurable amount.
+If the predictive model can be deployed so that the end user community can: a. easily access and understand the model results. b. realize the benefits of these predictions by not having to scheduled extra "ghost" class sections, cancel sections or add seat capacity to exising sections.  All of the above will reduce the scheduling workload by a measurable amount.
 
 ### **Risks** 
 
