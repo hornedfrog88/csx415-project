@@ -2,20 +2,23 @@
 % Please edit documentation in R/score.R
 \name{score}
 \alias{score}
-\title{Score Function - Predict Total Course Enrollment W/ 4 Inputs)}
+\title{Score Function - Predict Total Course Enrollment Using 4 Inputs}
 \usage{
 score(courseID, maxunits, totalcapacity, totalsections)
 }
 \arguments{
-\item{CourseID}{6 digit integer which is the unique course identifier}
+\item{CourseID}{6 digit integer which is the unique UC Berkeley course identifier}
 
-\item{MaxUnits}{2 digit maximum integer}
+\item{MaxUnits}{2 digit(max) integer}
 
-\item{TotalCapacity}{3 digit maximum integer}
+\item{TotalCapacity}{3 digit(max) integer}
 
-\item{TotalSections}{3 digit maximum integer}
+\item{TotalSections}{3 digit(max) integer}
 }
 \examples{
-  score(125768,3,75,4)
-  score(154233,3,63,4)
+  score(125768,3,75,4)-DATASCI W266
+  score(154233,3,63,4)-DATASCI W200
+  score(114496,4,107,4)-MATH 1A
+  score(114538,4,36,1)-MATH 141
+  score(118027,4,100,1)-PHILOS 12A
 }
