@@ -39,5 +39,3 @@ pkg <- "pkgs/TotalEnrlPredictor"
 devtools::use_data(rf_fit, pkg = pkg, overwrite = TRUE )
 
 
-#devtools::use_data(rf_fit, pkg = pkg, overwrite = TRUE )
-
