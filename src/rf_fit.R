@@ -38,4 +38,3 @@ if( ! dir.exists(pkg) ) devtools::create(pkg)
 pkg <- "pkgs/TotalEnrlPredictor"
 devtools::use_data(rf_fit, pkg = pkg, overwrite = TRUE )
 
-

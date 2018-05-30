@@ -22,5 +22,3 @@ pkg <- "pkgs/TotalEnrlPredictor"
 if( ! dir.exists(pkg) ) devtools::create(pkg)
 pkg <- "pkgs/TotalEnrlPredictor"
 devtools::use_data(lm_fit, pkg = pkg, overwrite = TRUE )
-
-
