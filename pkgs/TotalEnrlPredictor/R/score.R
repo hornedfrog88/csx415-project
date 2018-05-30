@@ -14,6 +14,7 @@
 #' @import jsonlite
 #' @import dplyr
 #' @import magrittr
+#' @import randomForest
 #' @export
 
 #Scoring Function
