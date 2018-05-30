@@ -2,9 +2,9 @@ Package: TotalEnrlPredictor
 Title: Total Enrollment Predictor
 Version: 0.0.0.1
 Authors@R: person("Richard", "McGowan", email = "rmcgowan@berkeley.edu", role = c("aut", "cre"))
-Description: This package contains an object rf_fit (random forest model) intended to be used by  
-    UC Berkeley department and college schedulers for predicting the total course enrollments for 
-    a target enrollment Term. 
+Description: This package contains two scoring functions which rely on objects rf_fit (random forest model) 
+    and lm_fit (linear regression model) intended to be used by UC Berkeley department and college schedulers 
+    for predicting the total course enrollments for a target enrollment Term. 
 Depends: R (>= 3.4.1)
 License: GPL-2 GPL-3 LGPL-2 LGPL-2.1 LGPL-3 AGPL-3 Artistic-2.0
 Encoding: UTF-8

@@ -1,4 +1,4 @@
-#' @title Score Function - Predict Total Course Enrollment Using 4 Inputs
+#' @title Score Function - Predict Total Course Enrollment using Random Forest (4 Parameters)
 #' @param CourseID 6 digit integer which is the unique UC Berkeley course identifier
 #' @param MaxUnits 2 digit(max) integer
 #' @param TotalCapacity 3 digit(max) integer
